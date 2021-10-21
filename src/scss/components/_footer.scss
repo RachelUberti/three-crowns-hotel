@@ -1,4 +1,5 @@
-@use '../abstracts'as *;
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
 
 .footer {
   background-color: $black;
@@ -52,6 +53,10 @@
     }
   }
 
+  &__phone-link {
+    font-weight: bold;  
+  }
+
   a:link,
   a:visited {
     text-decoration: none;
@@ -63,6 +68,13 @@
     text-decoration: none;
     background: $white;
     color: $black;
+  }
+
+  &__credit {
+    @include font-normal;
+    font-size: 14px;
+    color: white;
+    padding-top: 10px;
   }
 
   &__socials {
