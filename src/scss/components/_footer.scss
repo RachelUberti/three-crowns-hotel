@@ -1,0 +1,95 @@
+@use '../abstracts'as *;
+
+.footer {
+  background-color: $black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    padding-top: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+
+    @media screen and (max-width: 320px) {
+      padding: 2em;
+      margin-top: 30px;
+    }
+  }
+
+  &__heading {
+    @include font-bold;
+    color: #f4f2ef;
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    border-bottom: 1px solid #f4f2ef;
+    box-align: center;
+    width: 80px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  &__hours {
+    @include font-normal;
+    color: #f4f2ef;
+
+    @media screen and (max-width: 320px) {
+      font-size: 18px;
+    }
+  }
+
+  &__phone {
+    @include font-normal;
+    margin-top: 35px;
+
+    @media screen and (max-width: 320px) {
+      font-size: 18px;
+    }
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #f4f2ef;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: none;
+    background: $white;
+    color: $black;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+
+    @media only screen and (min-width: 768px) {
+      position: relative;
+      left: 650px;
+      bottom: 65px;
+      padding: 0px;
+    }
+  }
+
+  &__socials-button {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    vertical-align: middle;
+    border: solid 1px $white;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 20px;
+  }
+
+}

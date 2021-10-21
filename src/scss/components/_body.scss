@@ -1,0 +1,16 @@
+@use '../abstracts'as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

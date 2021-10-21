@@ -1,0 +1,23 @@
+@mixin font-bold {
+  font-family: ('Montserrat', 'Roboto', 'Sans Serif');
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+@mixin font-normal {
+  font-family: ('Montserrat', 'Roboto', 'Sans Serif');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
