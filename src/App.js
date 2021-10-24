@@ -1,5 +1,5 @@
 import logo from './images/logo.svg';
-import './Menu';
+// import MenusPage from './MenusPage';
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
 import './scss/components/_about.scss';
@@ -30,7 +30,7 @@ function App() {
           <ul class="navbar__list">
             <div class="burgerburger">&#9776;</div>
             <li>
-              <a href="Menu.js"><button class="navbar__button-menu">Menus</button></a>
+              <a href="MenusPage.js"><button class="navbar__button-menu">Menus</button></a>
             </li>
             <li>
               <a class="navbar__logo" href="/">
@@ -51,7 +51,7 @@ function App() {
             <div class="overlay-content">
               <a href="#book"><button class="overlay__button-book">Book a table</button>
               </a>
-              <a href="menu.html"><button class="overlay__button-menu">Menus</button></a>
+              <a href="MenusPage"><button class="overlay__button-menu">Menus</button></a>
               <div class="overlay__socials">
                 <a href="https://www.facebook.com/threecrownshotel"
                   class="overlay__socials-button fa fa-facebook fa-2x">facebook</a>

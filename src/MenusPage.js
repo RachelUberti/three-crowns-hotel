@@ -15,9 +15,9 @@ import chickenWingsImageCropped from './images/chicken-wings-cropped.png';
 import cocktailsImage from './images/cocktails.png';
 import cocktailsImageCropped from './images/cocktails-cropped.png';
 
-function Menu() {
+function MenusPage() {
   return (
-    <div className="Menu">
+    <div>
       <header>
         {/* <!-- Nav bar  --> */}
         <nav id="menuNavbar" class="navbar">
@@ -153,4 +153,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MenusPage;
