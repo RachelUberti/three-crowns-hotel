@@ -23,14 +23,18 @@
   &__heading {
     @include font-bold;
     text-transform: uppercase;
+    margin-bottom: 24px;
   }
 
   &__line {
     border-bottom: 1px solid $black;
+    margin: auto;
     width: 80px;
+    opacity: 1;
   }
 
   &__para {
     @include font-normal;
+    margin-top: 24px;
   }
 }

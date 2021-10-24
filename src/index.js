@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import MenusPage from './MenusPage';
+// import MenusPage from './MenusPage';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <MenusPage />
   </React.StrictMode>,
   document.getElementById('root')
 );

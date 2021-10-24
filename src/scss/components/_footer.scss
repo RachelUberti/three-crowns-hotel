@@ -25,19 +25,24 @@
     color: #f4f2ef;
     padding-top: 20px;
     text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__line-div {
+    margin-bottom: 24px;
   }
 
   &__line {
     border-bottom: 1px solid #f4f2ef;
     box-align: center;
     width: 80px;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin: auto;
+    opacity: 1;
   }
 
   &__hours {
     @include font-normal;
     color: #f4f2ef;
+
 
     @media screen and (max-width: 320px) {
       font-size: 18px;
@@ -91,17 +96,17 @@
     }
   }
 
-  &__socials-button {
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 60px;
-    vertical-align: middle;
-    border: solid 1px $white;
-    border-radius: 50%;
-    padding: 12px;
-    margin: 20px;
-  }
+  // &__socials-button {
+  //   width: 60px;
+  //   height: 60px;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   line-height: 60px;
+  //   vertical-align: middle;
+  //   border: solid 1px $white;
+  //   border-radius: 50%;
+  //   padding: 12px;
+  //   margin: 20px;
+  // }
 
 }
