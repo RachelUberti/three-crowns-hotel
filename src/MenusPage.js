@@ -1,5 +1,5 @@
 import logo from './images/logo.svg';
-import './App';
+import App from './App';
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
 import './scss/components/_about.scss';
@@ -45,7 +45,7 @@ function MenusPage() {
             <div class="overlay-content">
               <a href="#book"><button class="overlay__button-book">Book a table</button>
               </a>
-              <a href="App.js"><button class="overlay__button-menu">Home</button></a>
+              <a href="./App.js"><button class="overlay__button-menu">Home</button></a>
               <div class="overlay__socials">
                 <a href="https://www.facebook.com/threecrownshotel"
                   class="overlay__socials-button fa fa-facebook fa-2x">facebook</a>
@@ -90,9 +90,11 @@ function MenusPage() {
                 <p class="menu__para">
                   Pub classics meet American favourites.
                 </p>
-                <button class="menu__button"
+                {/* <button class="menu__button"
                   onclick="window.location.href='https:/drive.google.com/file/d/15f-QJsmNq4uZlGe4fe39t4LrntfrgPHT/view?usp=sharing'">View
                   food menu</button>
+                  */}
+                <a class="menu__button" href='src\pdfs\foodMenu.pdf' download>Food menu</a>
               </div>
             </div>
           </div>

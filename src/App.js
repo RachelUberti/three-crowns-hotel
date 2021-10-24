@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <header>
         {/* <!-- Nav bar  --> */}
-        <Menu className="menu"><a href="#book">test</a></Menu>
+        {/* <Menu className="menu"><a href="#book">test</a></Menu> */}
         <nav class="navbar">
           <ul class="navbar__list">
             <div class="burgerburger">&#9776;</div>
