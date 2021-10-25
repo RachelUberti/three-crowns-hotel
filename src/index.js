@@ -4,6 +4,7 @@ import App from './App';
 // import MenusPage from './MenusPage';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MenusPage from './MenusPage';
 
 ReactDOM.render(
   <React.StrictMode>

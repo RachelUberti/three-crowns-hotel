@@ -1,5 +1,5 @@
-import logo from './images/logo.svg';
 import App from './App';
+import logo from './images/logo.svg';
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
 import './scss/components/_about.scss';
@@ -14,6 +14,12 @@ import chickenWingsImage from './images/chicken-wings.png';
 import chickenWingsImageCropped from './images/chicken-wings-cropped.png';
 import cocktailsImage from './images/cocktails.png';
 import cocktailsImageCropped from './images/cocktails-cropped.png';
+import foodMenu from './pdfs/food-menu.pdf';
+import kidsFoodMenu from './pdfs/kids-food-menu.pdf';
+import drinksMenu from './pdfs/drinks-menu.pdf';
+
+var React = require('react');
+var { SocialIcon } = require('react-social-icons');
 
 function MenusPage() {
   return (
@@ -24,7 +30,7 @@ function MenusPage() {
           <ul class="navbar__list">
             <div class="burgerburger">&#9776;</div>
             <li>
-              <a href="App.js"><button class="navbar__button-menu">Home</button></a>
+              <a href={App}><button class="navbar__button-menu">Home</button></a>
             </li>
             <li>
               <a class="navbar__logo" href="/">
@@ -32,7 +38,7 @@ function MenusPage() {
               </a>
             </li>
             <li>
-              <a href="#book"><button class="navbar__button-book">Book a table</button>
+              <a href="javascript:void(window.open('https://www.bookarestaurant.com/widget/BookingWidgetView/3466/Three-Crowns-Hotel/3/en-AU?PrimaryTextColour=000000&amp;SecondaryTextColour=000000&amp;WidgetBackgroundColour=ffffff&amp;PrimaryWidgetColour=922f37&amp;BackNavigationButtonsColour=ddbea4&amp;SelectableOptionsColour=b79172&amp;CalAvailableDateColour=000000&amp;CalBGAvailableColour=b79172&amp;CalBGUnAvailableColour=ffffff&amp;CalUnAvailableDateColour=cecdcd&amp;CalendarHeaderTextColor=ffffff&amp;CalendarHeaderGridColour=461210&amp;FontName=Verdana%2c+Geneva%2c+sans-serif&amp;HeaderImage=%2fresources.ashx%2fRestaurantImages%2fxoN7BzHdoEGGkHhKW8TyoA.75.400.75.400.100%2fImage%2f3508C0BDCE4BCBA37232E41F09C8587D%2fTCH.PNG&amp;WidgetSpritesID=2&amp;BARLogoID=4&amp;isSpecialRequestsRequired=False&amp;IsAvTimeSlot=False&amp;MinPartySize=2&amp;MaxPartySize=12&amp;IsHideRestaurantTitle=True&amp;IsShowTermsAndConditions=False','_blank','height=600,%20width=400,%20toolbar=no,location=no,resizable=no,menubar=no,scrollbars=yes'%20))"><button class="navbar__button-book">Book a table</button>
               </a>
             </li>
           </ul>
@@ -43,9 +49,9 @@ function MenusPage() {
             <a href="#book" class="closebtn">&times;</a>
             {/* <!-- Overlay content --> */}
             <div class="overlay-content">
-              <a href="#book"><button class="overlay__button-book">Book a table</button>
+              <a href="javascript:void(window.open('https://www.bookarestaurant.com/widget/BookingWidgetView/3466/Three-Crowns-Hotel/3/en-AU?PrimaryTextColour=000000&amp;SecondaryTextColour=000000&amp;WidgetBackgroundColour=ffffff&amp;PrimaryWidgetColour=922f37&amp;BackNavigationButtonsColour=ddbea4&amp;SelectableOptionsColour=b79172&amp;CalAvailableDateColour=000000&amp;CalBGAvailableColour=b79172&amp;CalBGUnAvailableColour=ffffff&amp;CalUnAvailableDateColour=cecdcd&amp;CalendarHeaderTextColor=ffffff&amp;CalendarHeaderGridColour=461210&amp;FontName=Verdana%2c+Geneva%2c+sans-serif&amp;HeaderImage=%2fresources.ashx%2fRestaurantImages%2fxoN7BzHdoEGGkHhKW8TyoA.75.400.75.400.100%2fImage%2f3508C0BDCE4BCBA37232E41F09C8587D%2fTCH.PNG&amp;WidgetSpritesID=2&amp;BARLogoID=4&amp;isSpecialRequestsRequired=False&amp;IsAvTimeSlot=False&amp;MinPartySize=2&amp;MaxPartySize=12&amp;IsHideRestaurantTitle=True&amp;IsShowTermsAndConditions=False','_blank','height=600,%20width=400,%20toolbar=no,location=no,resizable=no,menubar=no,scrollbars=yes'%20))"><button class="navbar__button-book">Book a table</button>
               </a>
-              <a href="./App.js"><button class="overlay__button-menu">Home</button></a>
+              <a href={App}><button class="overlay__button-menu">Home</button></a>
               <div class="overlay__socials">
                 <a href="https://www.facebook.com/threecrownshotel"
                   class="overlay__socials-button fa fa-facebook fa-2x">facebook</a>
@@ -77,42 +83,38 @@ function MenusPage() {
       {/* <!-- Two Columns Section --> */}
       <section>
         <div class="container-fluid px-0">
-          <div class="row no-gutters flex-column-reverse flex-lg-row">
-            <div class="col-lg-6">
+          <div class="row no-gutters mx-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 px-0">
               <picture>
                 <source media="(max-width:400px)" srcset={chickenWingsImageCropped} />
                 <source srcset={chickenWingsImage} />
                 <img class="block-image" src={chickenWingsImage} alt="Chicken wings in a basket" />
               </picture>
             </div>
-            <div class="menu col-lg-6">
+            <div class="menu col-lg-6 px-0">
               <div class="menu__text">
                 <p class="menu__para">
                   Pub classics meet American favourites.
                 </p>
-                {/* <button class="menu__button"
-                  onclick="window.location.href='https:/drive.google.com/file/d/15f-QJsmNq4uZlGe4fe39t4LrntfrgPHT/view?usp=sharing'">View
-                  food menu</button>
-                  */}
-                <a class="menu__button" href='src\pdfs\foodMenu.pdf' download>Food menu</a>
+                <a href={foodMenu} download><button class="menu__button menusPageButtons">View food menu</button></a>
+                <a href={kidsFoodMenu} download><button class="menu__button menusPageButtons">View kids food menu</button></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <section>
         <div class="container-fluid px-0">
-          <div class="row no-gutters">
-            <div class="block col-lg-6">
+          <div class="row no-gutters mx-0">
+            <div class="block col-lg-6 px-0">
               <div class="menu__text">
                 <p class="menu__para">
                   Beers, cocktails & wines.
                 </p>
-                <button class="menu__button">View drinks menu</button>
-              </div>
+                <a href={drinksMenu} download><button class="menu__button menusPageButtons">View drinks menu</button></a>              </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 px-0">
               <picture>
                 <source media="(max-width:400px)" srcset={cocktailsImageCropped} />
                 <source srcset={cocktailsImage} />
@@ -130,7 +132,9 @@ function MenusPage() {
             <div class="footer">
               <div class="footer__text">
                 <h1 class="footer__heading">Come dine with us</h1>
-                <hr class="footer__line" />
+                <div class="footer__line-div" >
+                  <hr class="footer__line" />
+                </div>
                 <p class="footer__hours">Monday - Tuesday 4pm - 10pm</p>
                 <p class="footer__hours">Wednesday 12pm - 10pm</p>
                 <p class="footer__hours">Thursday - Saturday 12pm - Late</p>
@@ -144,14 +148,14 @@ function MenusPage() {
                   <a href="#" class="footer__socials-button fa fa-facebook fa-2x">facebook</a>
                   <a href="#" class="footer__socials-button fa fa-instagram fa-2x">Instagram</a>
                 </div>
-                <p class="footer__credit">UI design by Dominique Pooley and engineering by Rachel Uberti
+                <p class="footer__credit">UI design by <a href="http://dompooley.com/">Dominique Pooley </a>and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a> ❤️
                 </p>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   );
 }
 

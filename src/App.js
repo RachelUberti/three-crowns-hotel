@@ -1,5 +1,5 @@
-import logo from './images/logo.svg';
 import MenusPage from './MenusPage';
+import logo from './images/logo.svg'
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
 import './scss/components/_about.scss';
@@ -8,8 +8,6 @@ import './scss/components/_block-text.scss';
 import './scss/components/_body.scss';
 import './scss/components/_footer.scss';
 import './scss/components/_hero-image.scss';
-import './scss/components/_menu-page-body.scss';
-import './scss/components/_menu-page-navbar.scss';
 import burgerImage from './images/burger.png';
 import burgerImageCropped from './images/burger-cropped.png';
 import heroImage from './images/hero-image.png';
@@ -27,12 +25,11 @@ function App() {
     <div className="App">
       <header>
         {/* <!-- Nav bar  --> */}
-        {/* <Menu className="menu"><a href="#book">test</a></Menu> */}
         <nav class="navbar">
           <ul class="navbar__list">
             <div class="burgerburger">&#9776;</div>
             <li>
-              <a href="MenusPage.js"><button class="navbar__button-menu">Menus</button></a>
+              <a href={MenusPage}><button class="navbar__button-menu">Menus</button></a>
             </li>
             <li>
               <a class="navbar__logo" href="/">
@@ -40,7 +37,9 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#book"><button class="navbar__button-book">Book a table</button>
+              {/* <a href="#book"><button class="navbar__button-book">Book a table</button>
+              </a> */}
+              <a href="javascript:void(window.open('https://www.bookarestaurant.com/widget/BookingWidgetView/3466/Three-Crowns-Hotel/3/en-AU?PrimaryTextColour=000000&amp;SecondaryTextColour=000000&amp;WidgetBackgroundColour=ffffff&amp;PrimaryWidgetColour=922f37&amp;BackNavigationButtonsColour=ddbea4&amp;SelectableOptionsColour=b79172&amp;CalAvailableDateColour=000000&amp;CalBGAvailableColour=b79172&amp;CalBGUnAvailableColour=ffffff&amp;CalUnAvailableDateColour=cecdcd&amp;CalendarHeaderTextColor=ffffff&amp;CalendarHeaderGridColour=461210&amp;FontName=Verdana%2c+Geneva%2c+sans-serif&amp;HeaderImage=%2fresources.ashx%2fRestaurantImages%2fxoN7BzHdoEGGkHhKW8TyoA.75.400.75.400.100%2fImage%2f3508C0BDCE4BCBA37232E41F09C8587D%2fTCH.PNG&amp;WidgetSpritesID=2&amp;BARLogoID=4&amp;isSpecialRequestsRequired=False&amp;IsAvTimeSlot=False&amp;MinPartySize=2&amp;MaxPartySize=12&amp;IsHideRestaurantTitle=True&amp;IsShowTermsAndConditions=False','_blank','height=600,%20width=400,%20toolbar=no,location=no,resizable=no,menubar=no,scrollbars=yes'%20))"><button class="navbar__button-book">Book a table</button>
               </a>
             </li>
           </ul>
@@ -51,9 +50,9 @@ function App() {
             <a href="#book" class="closebtn">&times;</a>
             {/* <!-- Overlay content --> */}
             <div class="overlay-content">
-              <a href="#book"><button class="overlay__button-book">Book a table</button>
+              <a href="javascript:void(window.open('https://www.bookarestaurant.com/widget/BookingWidgetView/3466/Three-Crowns-Hotel/3/en-AU?PrimaryTextColour=000000&amp;SecondaryTextColour=000000&amp;WidgetBackgroundColour=ffffff&amp;PrimaryWidgetColour=922f37&amp;BackNavigationButtonsColour=ddbea4&amp;SelectableOptionsColour=b79172&amp;CalAvailableDateColour=000000&amp;CalBGAvailableColour=b79172&amp;CalBGUnAvailableColour=ffffff&amp;CalUnAvailableDateColour=cecdcd&amp;CalendarHeaderTextColor=ffffff&amp;CalendarHeaderGridColour=461210&amp;FontName=Verdana%2c+Geneva%2c+sans-serif&amp;HeaderImage=%2fresources.ashx%2fRestaurantImages%2fxoN7BzHdoEGGkHhKW8TyoA.75.400.75.400.100%2fImage%2f3508C0BDCE4BCBA37232E41F09C8587D%2fTCH.PNG&amp;WidgetSpritesID=2&amp;BARLogoID=4&amp;isSpecialRequestsRequired=False&amp;IsAvTimeSlot=False&amp;MinPartySize=2&amp;MaxPartySize=12&amp;IsHideRestaurantTitle=True&amp;IsShowTermsAndConditions=False','_blank','height=600,%20width=400,%20toolbar=no,location=no,resizable=no,menubar=no,scrollbars=yes'%20))"><button class="navbar__button-book">Book a table</button>
               </a>
-              <a href="MenusPage.js"><button class="overlay__button-menu">Menus</button></a>
+              <a href={MenusPage}><button class="overlay__button-menu">Menus</button></a>
               <div class="overlay__socials">
                 <a href="https://www.facebook.com/threecrownshotel"
                   class="overlay__socials-button fa fa-facebook fa-2x">facebook</a>
@@ -114,29 +113,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* <section>
-        <Container>
-          <Row>
-            <Col>
-              <div class="block__text">
-                <h1 class="block__heading">Location</h1>
-                <hr class="block__line" />
-                <p class="block__para">
-                  365 Victoria St, West Melbourne VIC 3003
-                </p>
-              </div>
-            </Col>
-            <Col>
-              <picture>
-                <source media="(max-width:400px)" srcset={spritzImageCropped} />
-                <source srcset={spritzImage} />
-                <img class="block-image" src={spritzImage} alt="Aperol Spritz Cocktail" />
-              </picture>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
 
       <section>
         <div class="container-fluid px-0">
@@ -212,10 +188,10 @@ function App() {
                     class="footer__socials-button fa fa-facebook fa-2x">facebook</a>
                   <a href="https://www.instagram.com/threecrownshotel/?hl=en"
                     class="footer__socials-button fa fa-instagram fa-2x">instagram</a> */}
-                  <SocialIcon url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#000000" fgColor="#FFFFFF" style={{ height: 60, width: 60, border: '1px solid white', borderRadius: 50, margin: 20 }} />
+                  <SocialIcon class="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#000000" fgColor="#FFFFFF" />
                   <SocialIcon url="https://www.instagram.com/threecrownshotel/?hl=en" network="instagram" bgColor="#000000" fgColor="#FFFFFF" style={{ height: 60, width: 60, border: '1px solid white', borderRadius: 50, margin: 20 }} />
                 </div>
-                <p class="footer__credit">UI design by Dominique Pooley and engineering by Rachel Uberti
+                <p class="footer__credit">UI design by <a href="http://dompooley.com/">Dominique Pooley </a>and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a> ❤️
                 </p>
               </div>
             </div>
