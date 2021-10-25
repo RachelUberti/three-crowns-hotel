@@ -43,7 +43,6 @@
     @include font-normal;
     color: #f4f2ef;
 
-
     @media screen and (max-width: 320px) {
       font-size: 18px;
     }
@@ -62,26 +61,6 @@
     font-weight: bold;  
   }
 
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: #f4f2ef;
-  }
-
-  a:hover,
-  a:active {
-    text-decoration: none;
-    background: $white;
-    color: $black;
-  }
-
-  &__credit {
-    @include font-normal;
-    font-size: 14px;
-    color: white;
-    padding-top: 10px;
-  }
-
   &__socials {
     display: flex;
     align-items: center;
@@ -91,44 +70,38 @@
 
       @media only screen and (min-width: 1024px) {
       position: relative;
-      left: 250px;
+      left: 450px;
       bottom: 65px;
       padding: 0px;
-      display: flex;
       justify-content: flex-end;
     }
-
-    // @media only screen and (min-width: 1100px) {
-    //   position: relative;
-    //   left: 350px;
-    //   bottom: 65px;
-    //   padding: 0px;
-    //   display: flex;
-    //   justify-content: flex-end;
-    // }
   }
 
-  // &__socials-button {
-  //   width: 60px;
-  //   height: 60px;
-    // text-align: center;
-    // text-decoration: none;
-    // line-height: 60px;
-    // vertical-align: middle;
-    // border: solid 1px $white;
-    // border-radius: 50%;
-    // padding: 12px;
-    // margin: 20px;
-
-  // }
-
-  
   &__socials-button {
-    height: 60px;
-    width: 60px;
-    border: 1px solid white;
+    border: 1px solid $white;
     border-radius: 50%;
     margin: 20px;
+    color: white;
   }
 
+   &__credit {
+    @include font-normal;
+    font-size: 14px;
+    color:$white;
+    padding-top: 10px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $white;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: none;
+    background: $white;
+    color: $black;
+  }
 }
+
