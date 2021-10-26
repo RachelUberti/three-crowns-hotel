@@ -52,14 +52,29 @@
     @include font-normal;
   }
 
+  &__button-book {
+    @include font-bold;
+    width: 260px;
+    height: 65px;
+    background: transparent;
+    border: 3px solid $black;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+
+  &__button-book:hover, &__button-book:active {
+    background: $black;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__phone:hover, &__phone:active {
+    text-decoration: underline;
+ }
+
   a:link,
   a:visited {
     text-decoration: none;
     color: $black;
-  }
-
-  a:hover,
-  a:active {
-    text-decoration: underline;
   }
 }
