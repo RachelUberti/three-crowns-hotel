@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import Home from './Home';
 import logo from './images/logo.svg';
 import chickenWingsImage from './images/chicken-wings.png';
 import chickenWingsImageCropped from './images/chicken-wings-cropped.png';

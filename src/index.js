@@ -4,10 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WebFont from 'webfontloader';
+import Menu from "./Menu";
+import MenuProvider from 'react-flexible-sliding-menu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MenuProvider Menu={Menu} >
+      <App />
+    </MenuProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

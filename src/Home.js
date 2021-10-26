@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import MenusPage from './MenusPage';
+import { MenuContext } from "react-flexible-sliding-menu";
+import * as FaIcons from "react-icons/fa";
 import logo from './images/logo.svg';
 import burgerImage from './images/burger.png';
 import burgerImageCropped from './images/burger-cropped.png';
@@ -24,13 +23,14 @@ import './scss/components/_hero-image.scss';
 
 
 function Home() {
+  const { toggleMenu } = useContext(MenuContext);
   return (
     <div className="Home">
-
       <header>
         {/* <!-- Nav bar  --> */}
         <nav class="navbar">
           <ul class="navbar__list">
+            <FaIcons.FaBars onClick={toggleMenu} className="burger" />
             <li>
               <Link to="/menuspage"><button className="navbar__button-menu">Menus</button></Link>
             </li>
