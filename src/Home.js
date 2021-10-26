@@ -31,7 +31,6 @@ function Home() {
         {/* <!-- Nav bar  --> */}
         <nav class="navbar">
           <ul class="navbar__list">
-            <div class="burgerburger">&#9776;</div>
             <li>
               <Link to="/menuspage"><button className="navbar__button-menu">Menus</button></Link>
             </li>

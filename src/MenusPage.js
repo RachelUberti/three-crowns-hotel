@@ -30,7 +30,6 @@ function MenusPage() {
         {/* <!-- Nav bar  --> */}
         <nav id="menuNavbar" className="navbar">
           <ul class="navbar__list">
-            <div class="burgerburger">&#9776;</div>
             <li>
               <Link to="/"><button className="navbar__button-menu">Home</button></Link>
             </li>

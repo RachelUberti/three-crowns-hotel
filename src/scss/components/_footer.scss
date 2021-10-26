@@ -15,7 +15,9 @@
     padding-right: 4em;
 
     @media screen and (max-width: 400px) {
-      padding: 2em;
+      padding-top: 2em;
+      padding-left: 1em;
+      padding-right: 1em;
       margin-top: 30px;
     }
   }
@@ -70,16 +72,8 @@
 
       @media only screen and (min-width: 1024px) {
       position: relative;
-      left: 300px;
-      bottom: 65px;
-      padding: 0px;
-      justify-content: flex-end;
-    }
-
-    @media only screen and (min-width: 768px) {
-      position: relative;
-      left: 180px;
-      bottom: 65px;
+      left: 320px;
+      bottom: 105px;
       padding: 0px;
       justify-content: flex-end;
     }
@@ -100,6 +94,9 @@
 
     @media screen and (max-width: 400px) {
       font-size: 9px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-top: 50px;
     }
   }
 
