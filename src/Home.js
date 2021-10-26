@@ -23,11 +23,9 @@ import './scss/components/_footer.scss';
 import './scss/components/_hero-image.scss';
 
 
-
 function Home() {
   return (
     <div className="Home">
-
 
       <header>
         {/* <!-- Nav bar  --> */}
