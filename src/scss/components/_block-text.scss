@@ -38,6 +38,13 @@
     @media screen and (max-width: 400px) {
       max-width: 80%;
       word-wrap: break-word;
+      font-size: 16px;
+    }
+  }
+
+  &__para-hours {
+    @media screen and (max-width: 400px) {
+      max-width: 100%;
     }
   }
 
