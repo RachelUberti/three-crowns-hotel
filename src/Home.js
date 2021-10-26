@@ -51,8 +51,8 @@ function Home() {
 
         {/* <!-- Hero image --> */}
         <picture >
-          <source media="(max-width:400px)" srcset={heroImageCropped} />
-          <source srcset={heroImage} />
+          <source media="(max-width:400px)" srcSet={heroImageCropped} />
+          <source srcSet={heroImage} />
           <img class="hero-image" src={heroImage} alt="People eating and drinking at a table" />
         </picture>
       </header>
@@ -89,8 +89,8 @@ function Home() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcset={spritzImageCropped} />
-                <source srcset={spritzImage} />
+                <source media="(max-width:400px)" srcSet={spritzImageCropped} />
+                <source srcSet={spritzImage} />
                 <img className="block-image" src={spritzImage} alt="Aperol Spritz Cocktail" />
               </picture>
             </div>
@@ -103,8 +103,8 @@ function Home() {
           <div className="row no-gutters mx-0 flex-column-reverse flex-lg-row">
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcset={steakImageCropped} />
-                <source srcset={steakImage} />
+                <source media="(max-width:400px)" srcSet={steakImageCropped} />
+                <source srcSet={steakImage} />
                 <img className="block-image" src={steakImage} alt="Red wine jus being poured on a plated steak" />
               </picture>
             </div>
@@ -139,8 +139,8 @@ function Home() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcset={burgerImageCropped} />
-                <source srcset={burgerImage} />
+                <source media="(max-width:400px)" srcSet={burgerImageCropped} />
+                <source srcSet={burgerImage} />
                 <img className="block-image" src={burgerImage} alt="Burger in a basket with fries" />
               </picture>
             </div>
@@ -172,7 +172,7 @@ function Home() {
                   {/* <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="instagram" bgColor="#000000" fgColor="#FFFFFF" style={{ height: 65, width: 65 }} />  */}
                   <FontAwesomeIcon className="footer__socials-button" icon={['fab', 'facebook-f']} />
                 </div>
-                <p className="footer__credit">UI design by <a href="http://dompooley.com/">Dominique Pooley </a>and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a> ❤️
+                <p className="footer__credit">Design by <a href="http://dompooley.com/">Dominique Pooley </a>and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a> ❤️
                 </p>
               </div>
             </div>
