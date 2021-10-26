@@ -70,7 +70,15 @@
 
       @media only screen and (min-width: 1024px) {
       position: relative;
-      left: 350px;
+      left: 300px;
+      bottom: 65px;
+      padding: 0px;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (min-width: 768px) {
+      position: relative;
+      left: 180px;
       bottom: 65px;
       padding: 0px;
       justify-content: flex-end;

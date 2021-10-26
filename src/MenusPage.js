@@ -67,7 +67,7 @@ function MenusPage() {
       {/* <!-- Two Columns Section --> */}
       <section>
         <div className="container-fluid px-0">
-          <div className="row no-gutters mx-0 flex-column-reverse flex-lg-row">
+          <div className="row no-gutters mx-0 flex-lg-row">
             <div className="col-lg-6 px-0">
               <picture>
                 <source media="(max-width:400px)" srcset={chickenWingsImageCropped} />
@@ -90,7 +90,7 @@ function MenusPage() {
 
       <section>
         <div className="container-fluid px-0">
-          <div className="row no-gutters mx-0">
+          <div id="block-direction" className="row no-gutters mx-0">
             <div className="block col-lg-6 px-0">
               <div className="block__text">
                 <p className="block__para">
