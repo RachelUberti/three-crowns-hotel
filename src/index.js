@@ -4,14 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WebFont from 'webfontloader';
-import Menu from "./Menu";
-import MenuProvider from 'react-flexible-sliding-menu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MenuProvider Menu={Menu} >
-      <App />
-    </MenuProvider>
+
+    <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -26,8 +24,3 @@ WebFont.load({
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-
-
-

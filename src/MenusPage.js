@@ -17,7 +17,7 @@ import './scss/components/_block-text.scss';
 import './scss/components/_body.scss';
 import './scss/components/_footer.scss';
 import './scss/components/_hero-image.scss';
-
+import { BOOKINGLINK } from './constants';
 
 function MenusPage() {
   return (
@@ -26,7 +26,7 @@ function MenusPage() {
       <header>
         {/* <!-- Nav bar  --> */}
         <nav id="menuNavbar" className="navbar">
-          <ul class="navbar__list">
+          <ul className="navbar__list">
             <li>
               <Link to="/"><button className="navbar__button-menu">Home</button></Link>
             </li>
@@ -36,8 +36,12 @@ function MenusPage() {
               </a>
             </li>
             <li>
-              <a href="javascript:void(window.open('https://www.bookarestaurant.com/widget/BookingWidgetView/3466/Three-Crowns-Hotel/3/en-AU?PrimaryTextColour=000000&amp;SecondaryTextColour=000000&amp;WidgetBackgroundColour=ffffff&amp;PrimaryWidgetColour=922f37&amp;BackNavigationButtonsColour=ddbea4&amp;SelectableOptionsColour=b79172&amp;CalAvailableDateColour=000000&amp;CalBGAvailableColour=b79172&amp;CalBGUnAvailableColour=ffffff&amp;CalUnAvailableDateColour=cecdcd&amp;CalendarHeaderTextColor=ffffff&amp;CalendarHeaderGridColour=461210&amp;FontName=Verdana%2c+Geneva%2c+sans-serif&amp;HeaderImage=%2fresources.ashx%2fRestaurantImages%2fxoN7BzHdoEGGkHhKW8TyoA.75.400.75.400.100%2fImage%2f3508C0BDCE4BCBA37232E41F09C8587D%2fTCH.PNG&amp;WidgetSpritesID=2&amp;BARLogoID=4&amp;isSpecialRequestsRequired=False&amp;IsAvTimeSlot=False&amp;MinPartySize=2&amp;MaxPartySize=12&amp;IsHideRestaurantTitle=True&amp;IsShowTermsAndConditions=False','_blank','height=600,%20width=400,%20toolbar=no,location=no,resizable=no,menubar=no,scrollbars=yes'%20))"><button className="navbar__button-book">Book a table</button>
-              </a>
+              <Link to={{ pathname: BOOKINGLINK }}
+                target='_blank'>
+                <button className="navbar__button-book">
+                  Book a table
+                </button>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -66,8 +70,8 @@ function MenusPage() {
           <div className="row no-gutters mx-0 flex-lg-row">
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcset={chickenWingsImageCropped} />
-                <source srcset={chickenWingsImage} />
+                <source media="(max-width:400px)" srcSet={chickenWingsImageCropped} />
+                <source srcSet={chickenWingsImage} />
                 <img className="block-image" src={chickenWingsImage} alt="Chicken wings in a basket" />
               </picture>
             </div>
@@ -97,8 +101,8 @@ function MenusPage() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcset={cocktailsImageCropped} />
-                <source srcset={cocktailsImage} />
+                <source media="(max-width:400px)" srcSet={cocktailsImageCropped} />
+                <source srcSet={cocktailsImage} />
                 <img className="block-image" src={cocktailsImage} alt="Cocktails in different shaped glasses" />
               </picture>
             </div>
@@ -121,7 +125,7 @@ function MenusPage() {
                 <p className="footer__hours">Thursday - Saturday 12pm - Late</p>
                 <p className="footer__hours">Sunday 12pm - 11pm</p>
                 <div className="footer__phone">
-                  <span itemprop="telephone">
+                  <span itemProp="telephone">
                     <a className="footer__phone-link" href="tel:03-93265033">03 9326 5033</a>
                   </span>
                 </div>
