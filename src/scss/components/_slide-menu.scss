@@ -1,0 +1,94 @@
+@import '../abstracts/fonts';
+@import '../abstracts/colours';
+
+.burger-menu {
+  float: left;
+
+  @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.bm-item {
+  display: inline-block;
+  /* sidebar item styling */
+  margin-bottom: 50px;
+}
+
+.bm-item:hover {
+  color:$white;
+}
+
+// The actual burger button styling
+.bm-burger-button {
+  position: absolute;
+  width: 45px;
+  height: 26px;
+  right: 28px;
+  top: 50px;
+  float: left;
+  left: 10px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $black;
+}
+
+/* Position and sizing of clickable cross button */
+// .bm-cross-button {
+//   height: 24px;
+//   width: 24px;
+// }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $white;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $black;
+  padding: 2.5em 1.5em 0;
+  // font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+// .bm-item-list {
+//   color: red;
+// }
+
+/* Styling of overlay */
+.bm-overlay {
+ background: rgba(0, 0, 0, 0.3);
+ }
+
+.bm-menu-wrap {
+    right: 0;
+}
+
+
+.slide-menu__Book-button {
+  @include font-bold;
+  color:$white;
+  width: 235px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid $white;
+  text-transform: uppercase;
+}
+
+.slide-menu__Menus-button {
+  @include font-bold;
+  color:$white;
+  width: 235px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+}

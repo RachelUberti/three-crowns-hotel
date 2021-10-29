@@ -12,6 +12,7 @@ import spritzImage from './images/spritz.png';
 import spritzImageCropped from './images/spritz-cropped.png';
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
+import './scss/components/_slide-menu.scss';
 import './scss/components/_about.scss';
 import './scss/components/_block-image.scss';
 import './scss/components/_block-text.scss';
@@ -31,8 +32,6 @@ function Home() {
 
       <header>
         {/* <!-- Nav bar  --> */}
-
-
         <nav className="navbar">
           <div className='navbar__main-menu'>
             <div className='navbar__sub-main-menu'>
@@ -186,7 +185,6 @@ function Home() {
                 <div className="footer__socials">
                   <SocialIcon className="footer__socials-button" url="https://www.facebook.com/threecrownshotel" network="facebook" bgColor="#000000" fgColor="#FFFFFF" color="currentColor" style={{ height: 65, width: 65 }} />
                   <SocialIcon className="footer__socials-button" url="https://www.instagram.com/threecrownshotel/?hl=en" network="instagram" bgColor="#000000" fgColor="#FFFFFF" style={{ height: 65, width: 65 }} />
-                  {/* <FontAwesomeIcon className="footer__socials-button" icon={['fab', 'facebook-f']}  */}
                 </div>
                 <p className="footer__credit">Design by <a href="http://dompooley.com/">Dominique Pooley </a>and engineering by <a href="https://www.linkedin.com/in/racheluberti/">Rachel Uberti</a> ❤️
                 </p>

@@ -11,6 +11,7 @@ import kidsFoodMenu from './pdfs/kids-food-menu.pdf';
 import drinksMenu from './pdfs/drinks-menu.pdf';
 import './scss/main.scss';
 import './scss/components/_navbar.scss';
+import './scss/components/_slide-menu.scss';
 import './scss/components/_about.scss';
 import './scss/components/_block-image.scss';
 import './scss/components/_block-text.scss';
