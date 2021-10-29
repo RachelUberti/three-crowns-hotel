@@ -88,10 +88,9 @@ a.bm-item {
   border: none !important;
 }
 
-// a.bm-item:active, a.bm-item:focus {
-//   color: $black;
-//   border: none !important;
-// }
+a.bm-item:active, a.bm-item:focus {
+ outline: none !important;
+}
 
 a {
   color: transparent;
