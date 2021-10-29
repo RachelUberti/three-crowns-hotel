@@ -32,8 +32,12 @@ background: $black;
 padding: 2.5em 1.5em 0;
 }
 
+.bm-item {
+  display: flex !important;
+}
+
 .bm-menu-wrap {
-  width: 100%;
+  width: 100% !important;
   }
 
 /* Color/shape of close button cross */
@@ -81,15 +85,17 @@ padding: 2.5em 1.5em 0;
 
 a.bm-item {
   text-decoration: none;
+  border: none !important;
 }
 
-a.bm-item:active, a.bm-item:focus {
-  color: $black;
-  border: none;
-}
+// a.bm-item:active, a.bm-item:focus {
+//   color: $black;
+//   border: none !important;
+// }
 
 a {
   color: transparent;
+  
 }
 
 
