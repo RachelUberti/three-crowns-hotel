@@ -105,6 +105,7 @@ function MenusPage() {
                   Beers, cocktails & wines.
                 </p>
                 <a href={drinksMenu} download ><button className="block__button-book">View drinks menu</button></a>
+                <a href={drinksMenu} download ><button className="block__button-book">View drinks menu</button></a>
               </div>
             </div>
             <div className="col-lg-6 px-0">
