@@ -19,32 +19,39 @@ import './scss/components/_body.scss';
 import './scss/components/_footer.scss';
 import './scss/components/_hero-image.scss';
 import { BOOKINGLINK } from './constants';
+import SlideMenu from "./SlideMenu";
+
 
 function MenusPage() {
   return (
     <div className="MenusPage">
+      <div className='burger-menu'>
+        <SlideMenu />
+      </div>
 
       <header>
         {/* <!-- Nav bar  --> */}
         <nav id="menuNavbar" className="navbar">
-          <ul className="navbar__list">
-            <li>
-              <Link to="/"><button className="navbar__button-menu">Home</button></Link>
-            </li>
-            <li>
-              <a className="navbar__logo" href="/">
-                <img src={logo} alt="Three Crowns Hotel Logo" />
-              </a>
-            </li>
-            <li>
-              <Link to={{ pathname: BOOKINGLINK }}
-                target='_blank'>
-                <button className="navbar__button-book">
-                  Book a table
-                </button>
-              </Link>
-            </li>
-          </ul>
+          <div className='navbar__main-menu'>
+            <div className='navbar__sub-main-menu'>
+              <div>
+                <Link to="/"><button className="navbar__button-menu">Home</button></Link>
+              </div>
+              <div>
+                <a className="navbar__logo" href="/">
+                  <img src={logo} alt="Three Crowns Hotel Logo" />
+                </a>
+              </div>
+              <div>
+                <Link to={{ pathname: BOOKINGLINK }}
+                  target='_blank'>
+                  <button className="navbar__button-book">
+                    Book a table
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -81,8 +88,8 @@ function MenusPage() {
                 <p className="block__para">
                   Pub classics meet American favourites.
                 </p>
-                <a href={foodMenu} download><button className="navbar__button-menu menusPageButtons">View food menu</button></a>
-                <a href={kidsFoodMenu} download><button className="navbar__button-menu menusPageButtons">View kids food menu</button></a>
+                <a href={foodMenu} download><button className="block__button-book">View food menu</button></a>
+                <a href={kidsFoodMenu} download><button className="block__button-book">View kids food menu</button></a>
               </div>
             </div>
           </div>
@@ -97,7 +104,7 @@ function MenusPage() {
                 <p className="block__para">
                   Beers, cocktails & wines.
                 </p>
-                <a href={drinksMenu} download><button className="navbar__button-menu menusPageButtons">View drinks menu</button></a>
+                <a href={drinksMenu} download ><button className="block__button-book">View drinks menu</button></a>
               </div>
             </div>
             <div className="col-lg-6 px-0">
