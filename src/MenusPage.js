@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import { Helmet } from 'react-helmet';
 import logo from './images/logo.svg';
 import chickenWingsImage from './images/chicken-wings.png';
 import chickenWingsImageCropped from './images/chicken-wings-cropped.png';
@@ -25,6 +26,13 @@ import SlideMenu from "./SlideMenu";
 function MenusPage() {
   return (
     <div className="MenusPage">
+      <Helmet>
+        <title>Menus Page</title>
+        <meta
+          name="description"
+          content="Pub classics meet American favourites."
+        />
+      </Helmet>
       <div className='burger-menu'>
         <SlideMenu />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import { Helmet } from 'react-helmet';
 import logo from './images/logo.svg';
 import burgerImage from './images/burger.png';
 import burgerImageCropped from './images/burger-cropped.png';
@@ -26,6 +27,13 @@ import SlideMenu from "./SlideMenu";
 function Home() {
   return (
     <div className="Home">
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="An icon of North Melbourne comprising of bars, dining room, function spaces and beer garden, Three Crowns is the venue for any occasion!"
+        />
+      </Helmet>
       <div className='burger-menu'>
         <SlideMenu />
       </div>
