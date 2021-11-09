@@ -60,6 +60,10 @@
     border: 3px solid $black;
     text-transform: uppercase;
     margin-top: 50px;
+
+    @media screen and (max-width: 450px) {
+      margin-top: 30px;
+    }
   }
 
   &__button-book:hover, &__button-book:active {

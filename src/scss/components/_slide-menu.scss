@@ -40,9 +40,18 @@ padding: 2.5em 1.5em 0;
   width: 100% !important;
   }
 
+.bm-burger-bars {
+  height: 8% !important;
+}
 /* Color/shape of close button cross */
 .bm-cross {
   background: $white;
+  height: 24px !important;
+}
+
+.bm-cross-button {
+  right: 18px !important;
+  top: 18px !important;
 }
 
 .slide-menu__Book-button {
