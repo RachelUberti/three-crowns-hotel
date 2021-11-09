@@ -70,7 +70,7 @@ function Home() {
 
         {/* <!-- Hero image --> */}
         <picture >
-          <source media="(max-width:400px)" srcSet={heroImageCropped} />
+          <source media="(max-width:450px)" srcSet={heroImageCropped} />
           <source srcSet={heroImage} />
           <img className="hero-image" src={heroImage} alt="People eating and drinking at a table" />
         </picture>
@@ -108,7 +108,7 @@ function Home() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcSet={spritzImageCropped} />
+                <source media="(max-width:450px)" srcSet={spritzImageCropped} />
                 <source srcSet={spritzImage} />
                 <img className="block-image" src={spritzImage} alt="Aperol Spritz Cocktail" />
               </picture>
@@ -122,7 +122,7 @@ function Home() {
           <div className="row no-gutters mx-0 flex-column-reverse flex-lg-row">
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcSet={steakImageCropped} />
+                <source media="(max-width:450px)" srcSet={steakImageCropped} />
                 <source srcSet={steakImage} />
                 <img className="block-image" src={steakImage} alt="Red wine jus being poured on a plated steak" />
               </picture>
@@ -163,7 +163,7 @@ function Home() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcSet={burgerImageCropped} />
+                <source media="(max-width:450px)" srcSet={burgerImageCropped} />
                 <source srcSet={burgerImage} />
                 <img className="block-image" src={burgerImage} alt="Burger in a basket with fries" />
               </picture>

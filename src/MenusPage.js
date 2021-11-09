@@ -86,7 +86,7 @@ function MenusPage() {
           <div className="row no-gutters mx-0 flex-lg-row">
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcSet={chickenWingsImageCropped} />
+                <source media="(max-width:450px)" srcSet={chickenWingsImageCropped} />
                 <source srcSet={chickenWingsImage} />
                 <img className="block-image" src={chickenWingsImage} alt="Chicken wings in a basket" />
               </picture>
@@ -117,7 +117,7 @@ function MenusPage() {
             </div>
             <div className="col-lg-6 px-0">
               <picture>
-                <source media="(max-width:400px)" srcSet={cocktailsImageCropped} />
+                <source media="(max-width:450px)" srcSet={cocktailsImageCropped} />
                 <source srcSet={cocktailsImage} />
                 <img className="block-image" src={cocktailsImage} alt="Cocktails in different shaped glasses" />
               </picture>

@@ -16,12 +16,6 @@ function Menu() {
             <button className="navbar__button-book">Book a table</button>
           </li>
         </ul>
-        {/* <NavLink exact to="/">
-          <span>Home</span>
-        </NavLink>
-        <NavLink to="/MenusPage">
-          <span>Menus Page</span>
-        </NavLink> */}
       </nav>
       <AiIcons.AiOutlineClose onClick={closeMenu} className="menuClose" />
     </div>

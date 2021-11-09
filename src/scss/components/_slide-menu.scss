@@ -45,16 +45,6 @@ padding: 2.5em 1.5em 0;
   background: $white;
 }
 
-/* Morph shape necessary with bubble or elastic */
-// .bm-morph-shape {
-//   fill: #373a47;
-// }
-
-/* Styling of overlay */
-// .bm-overlay {
-//  background: rgba(0, 0, 0, 0.3);
-//  }
-
 .slide-menu__Book-button {
   @include font-bold;
   color:$white;
