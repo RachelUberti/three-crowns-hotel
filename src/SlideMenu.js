@@ -9,9 +9,6 @@ import { BOOKINGLINK } from './constants';
 function SlideMenu() {
   return (
     <Menu>
-      {/* <a href={BOOKINGLINK}>
-        <button className="slide-menu__Book-button">Book a table</button>
-      </a> */}
       <Link to={{ pathname: BOOKINGLINK }}
         target='_blank'>
         <button className="slide-menu__Book-button">
