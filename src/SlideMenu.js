@@ -1,5 +1,4 @@
 import { slide as Menu } from 'react-burger-menu';
-import { BOOKINGLINK } from './constants';
 import { SocialIcon } from 'react-social-icons';
 import './scss/components/_navbar.scss';
 import './scss/components/_slide-menu.scss';
