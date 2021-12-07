@@ -2,14 +2,21 @@ import { slide as Menu } from 'react-burger-menu';
 import { SocialIcon } from 'react-social-icons';
 import './scss/components/_navbar.scss';
 import './scss/components/_slide-menu.scss';
+import { BOOKINGLINK } from './constants';
 
 
 function SlideMenu() {
   return (
     <Menu>
-      <a href={BOOKINGLINK}>
-        <button className='slide-menu__Book-button'>Book a table</button>
-      </a>
+      {/* <a href={BOOKINGLINK}>
+        <button className="slide-menu__Book-button">Book a table</button>
+      </a> */}
+      <Link to={{ pathname: BOOKINGLINK }}
+        target='_blank'>
+        <button className="slide-menu__Book-button">
+          Book a table
+        </button>
+      </Link>
       <a href="/menuspage">
         <button className='slide-menu__Menus-button'>Menus</button>
       </a>
