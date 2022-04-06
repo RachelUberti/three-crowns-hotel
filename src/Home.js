@@ -131,9 +131,10 @@ function Home() {
               <div className="block__text">
                 <h1 className="block__heading">Open hours</h1>
                 <hr className="block__line" />
-                <p className="block__para block__para-hours">Monday - Wednesday 12pm - 10pm</p>
-                <p className="block__para block__para-hours">Thursday - Saturday 12pm - Late</p>
-                <p className="block__para block__para-hours">Sunday 12pm - 11pm</p>
+                <p className="footer__hours">Monday - Closed</p>
+                <p className="footer__hours">Tuesday 4pm - 10pm</p>
+                <p className="footer__hours">Wednesday - Saturday 12pm - Late</p>
+                <p className="footer__hours">Sunday 12pm - 11pm</p>
               </div>
             </div>
           </div>
