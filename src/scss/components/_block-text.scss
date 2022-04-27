@@ -42,6 +42,19 @@
     }
   }
 
+  &__subject {
+    font-family: ('Montserrat', 'Roboto', 'Sans Serif');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 34px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 8px;
+  }
+
   &__para-hours {
     @media screen and (max-width: 450px) {
       max-width: 100%;
@@ -66,15 +79,17 @@
     }
   }
 
-  &__button-book:hover, &__button-book:active {
+  &__button-book:hover,
+  &__button-book:active {
     background: $black;
     color: $white;
     text-decoration: none;
   }
 
-  &__phone:hover, &__phone:active {
+  &__phone:hover,
+  &__phone:active {
     text-decoration: underline;
- }
+  }
 
   a:link,
   a:visited {

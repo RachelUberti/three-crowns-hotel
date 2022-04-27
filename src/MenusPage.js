@@ -97,7 +97,13 @@ function MenusPage() {
                   Pub classics meet American favourites.
                 </p>
                 <a href={foodMenu} download><button className="block__button-book">View food menu</button></a>
-                <a href={kidsFoodMenu} download><button id="kidsMenu" className="block__button-book">View kids food menu</button></a>
+                <p className="block__subject">
+                  Subject to change
+                </p>
+                <a href={kidsFoodMenu} download><button id="kidsMenu" className="block__button-book" style={{ marginBottom: "0px" }}>View kids food menu</button></a>
+                <p className="block__subject">
+                  Subject to change
+                </p>
               </div>
             </div>
           </div>
@@ -113,6 +119,9 @@ function MenusPage() {
                   Beers, cocktails & wines.
                 </p>
                 <a href={drinksMenu} download ><button className="block__button-book">View drinks menu</button></a>
+                <p className="block__subject">
+                  Subject to change
+                </p>
               </div>
             </div>
             <div className="col-lg-6 px-0">
