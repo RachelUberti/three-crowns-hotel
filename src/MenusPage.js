@@ -136,10 +136,10 @@ function MenusPage() {
                 <div className="footer__line-div" >
                   <hr className="footer__line" />
                 </div>
-                <p className="footer__hours">Monday - Closed</p>
-                <p className="footer__hours">Tuesday 4pm - 10pm</p>
-                <p className="footer__hours">Wednesday - Saturday 12pm - Late</p>
-                <p className="footer__hours">Sunday 12pm - 11pm</p>
+                <p className="footer__hours">Monday Closed</p>
+                <p className="footer__hours">Tuesday 4 pm - 10 pm</p>
+                <p className="footer__hours">Wednesday to Saturday 12 pm - Late</p>
+                <p className="footer__hours">Sunday 12 pm - 11 pm</p>
                 <div className="footer__phone">
                   <span itemProp="telephone">
                     <a className="footer__phone-link" href="tel:03-93265033">03 9326 5033</a>
